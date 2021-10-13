@@ -42,47 +42,47 @@ $text-color-4: #9e9e9e;
     background-color: $default-color;
     color: $text-color-4;
   }
-}
 
-.btn.btn--md {
-  min-width: 81px;
-  min-height: 36px;
-}
-.btn.btn--sm {
-  width: 73px;
-  height: 32px;
-}
-.btn.btn--lg {
-  width: 93px;
-  height: 42px;
-}
-
-.btn.btn--outline {
-  color: $text-color-2;
-  border: 1px solid #3d5afe;
-  background: transparent;
-
-  &:hover,
-  &:focus {
-    background: rgba($primary-color, 0.1);
+  &.btn--md {
+    min-width: 81px;
+    min-height: 36px;
   }
-}
-
-.btn.btn--text {
-  color: $text-color-2;
-  box-shadow: none;
-  background: transparent;
-
-  &:hover,
-  &:focus {
-    background: rgba($primary-color, 0.1);
+  &.btn--sm {
+    width: 73px;
+    height: 32px;
+  }
+  &.btn--lg {
+    width: 93px;
+    height: 42px;
   }
 
-  &:disabled,
-  &[disabled] {
-    cursor: default;
-    color: $text-color-4;
+  &.btn--outline {
+    color: $text-color-2;
+    border: 1px solid #3d5afe;
     background: transparent;
+
+    &:hover,
+    &:focus {
+      background: rgba($primary-color, 0.1);
+    }
+  }
+
+  &.btn--text {
+    color: $text-color-2;
+    box-shadow: none;
+    background: transparent;
+
+    &:hover,
+    &:focus {
+      background: rgba($primary-color, 0.1);
+    }
+
+    &:disabled,
+    &[disabled] {
+      cursor: default;
+      color: $text-color-4;
+      background: transparent;
+    }
   }
 }
 

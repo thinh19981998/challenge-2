@@ -19,12 +19,18 @@ function Button({
   const btnDisableShadow = disableShadow ? 'btn--disableShadow' : '';
   const btnStartIcon = startIcon ? 'btn--Icon btn--startIcon' : '';
   const btnEndIcon = endIcon ? 'btn--Icon btn--endIcon' : '';
+  const label =
+    color === 'secondary'
+      ? 'Secondary'
+      : color === 'danger'
+      ? 'Danger'
+      : 'Default';
 
   const btnClass = `btn ${btnVariant} ${btnSize} ${btnColor} ${btnDisableShadow} ${btnStartIcon} ${btnEndIcon}`;
   return (
     <button className={btnClass} disabled={disabled}>
       {startIcon !== '' && <span class='material-icons'>{startIcon}</span>}
-      Default
+      {label}
       {endIcon !== '' && <span class='material-icons'>{endIcon}</span>}
     </button>
   );
